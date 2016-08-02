@@ -1,3 +1,4 @@
 markdown: redcarpet
 baseurl: /keops
 exclude: ['README.md']
+permalink: pretty
