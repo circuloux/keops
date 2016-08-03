@@ -15,11 +15,11 @@
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
 	<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
@@ -31,7 +31,7 @@
 
 </head>
 
-<body class="stretched">
+<body class="stretched .sticky-responsive-menu" id="top">
 
 <!-- Document Wrapper
 	============================================= -->
@@ -40,13 +40,13 @@
 
  	<!-- Header
 		============================================= -->
-		<header id="header" class="header-height">
+		<header id="header" class="full-header">
 
 			<div id="header-wrap">
 
 				<div class="container clearfix">
 
-					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+					<div id="primary-menu-trigger" style="display:none;"><i class="icon-reorder"></i></div>
 
 					<!-- Logo
 					============================================= -->
@@ -57,156 +57,17 @@
 
 					<!-- Primary Navigation
 					============================================= -->
-					<nav id="primary-menu" class="dark">
+					<nav id="primary-menu">
 
-						<ul>
-							<li class="current"><a href="index.html"><div>Inicio</div></a>
-								
-							</li>
-							<li><a href="#"><div>Quiénes Somos</div></a></li>
-							<li class="mega-menu"><a href="#"><div>Productos</div></a>
-								<!--<div class="mega-menu-content style-2 clearfix">
-									<ul class="mega-menu-column col-5">
-										<li class="mega-menu-title"><a href="#"><div>Grids</div></a>
-											<ul>
-												<li><a href="portfolio-1.html"><div>1 Column</div></a></li>
-												<li><a href="portfolio-2.html"><div>2 Columns</div></a></li>
-												<li><a href="portfolio-3.html"><div>3 Columns</div></a></li>
-												<li><a href="portfolio.html"><div>4 Columns</div></a></li>
-												<li><a href="portfolio-5.html"><div>5 Columns</div></a></li>
-												<li><a href="portfolio-6.html"><div>6 Columns</div></a></li>
-											</ul>
-										</li>
-									</ul>
-									<ul class="mega-menu-column col-5">
-										<li class="mega-menu-title"><a href="#"><div>Masonry</div></a>
-											<ul>
-												<li><a href="portfolio-mixed-masonry.html"><div>Mixed Columns</div></a></li>
-												<li><a href="portfolio-2-masonry.html"><div>2 Columns</div></a></li>
-												<li><a href="portfolio-3-masonry.html"><div>3 Columns</div></a></li>
-												<li><a href="portfolio-masonry.html"><div>4 Columns</div></a></li>
-												<li><a href="portfolio-5-masonry.html"><div>5 Columns</div></a></li>
-												<li><a href="portfolio-6-masonry.html"><div>6 Columns</div></a></li>
-											</ul>
-										</li>
-									</ul>
-									<ul class="mega-menu-column col-5">
-										<li class="mega-menu-title"><a href="#"><div>Loading Styles</div></a>
-											<ul>
-												<li><a href="portfolio.html"><div>jQuery Filter</div></a></li>
-												<li><a href="portfolio-jpagination.html"><div>jQuery Pagination</div></a></li>
-												<li><a href="portfolio-infinity-scroll.html"><div>Infinity Scroll</div></a></li>
-												<li><a href="portfolio-ajax.html"><div>AJAX In Page</div></a></li>
-												<li><a href="portfolio-ajax-in-modal.html"><div>AJAX In Modal</div></a></li>
-												<li><a href="portfolio-filter-styles.html"><div>Filter Styles</div></a></li>
-											</ul>
-										</li>
-									</ul>
-									<ul class="mega-menu-column col-5">
-										<li class="mega-menu-title"><a href="#"><div>Single Project</div></a>
-											<ul>
-												<li><a href="portfolio-single-extended.html"><div>Extended Item</div></a></li>
-												<li><a href="portfolio-single-fullwidth.html"><div>Parallax Image</div></a></li>
-												<li><a href="portfolio-single-gallery-full.html"><div>Slider Gallery</div></a></li>
-												<li><a href="portfolio-single-video-fullwidth-left-sidebar.html"><div>HTML5 Video</div></a></li>
-												<li><a href="portfolio-single-thumbs-right-sidebar.html"><div>Masonry Thumbs</div></a></li>
-												<li><a href="portfolio-single-video-both-sidebar.html"><div>Embed Video</div></a></li>
-											</ul>
-										</li>
-									</ul>
-									<ul class="mega-menu-column col-5">
-										<li class="mega-menu-title"><a href="#"><div>Layouts</div></a>
-											<ul>
-												<li><a href="portfolio-nomargin.html"><div>Default</div></a></li>
-												<li><a href="portfolio-1-alt-right-sidebar.html"><div>Right Sidebar</div></a></li>
-												<li><a href="portfolio-3-left-sidebar.html"><div>Left Sidebar</div></a></li>
-												<li><a href="portfolio-2-both-sidebar.html"><div>Both Sidebar</div></a></li>
-												<li><a href="portfolio-fullwidth-notitle.html"><div>100% Width</div></a></li>
-												<li><a href="portfolio-parallax.html"><div>Parallax</div></a></li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-							</li>-->
-							<li class="mega-menu"><a href="#"><div>Marcas</div></a>
-								<!--<div class="mega-menu-content style-2 clearfix">
-									<ul class="mega-menu-column col-md-3">
-										<li class="mega-menu-title"><a href="#"><div>Default</div></a>
-											<ul>
-												<li><a href="blog.html"><div>Right Sidebar</div></a></li>
-												<li><a href="blog-left-sidebar.html"><div>Left Sidebar</div></a></li>
-												<li><a href="blog-both-sidebar.html"><div>Both Sidebar</div></a></li>
-												<li><a href="blog-full-width.html"><div>Full Width</div></a></li>
-											</ul>
-										</li>
-										<li class="mega-menu-title"><a href="#"><div>Timeline</div></a>
-											<ul>
-												<li><a href="blog-timeline-right-sidebar.html"><div>Right Sidebar</div></a></li>
-												<li><a href="blog-timeline-left-sidebar.html"><div>Left Sidebar</div></a></li>
-												<li><a href="blog-timeline.html"><div>Full Width</div></a></li>
-											</ul>
-										</li>
-									</ul>
-									<ul class="mega-menu-column col-md-3">
-										<li class="mega-menu-title"><a href="#"><div>Masonry</div></a>
-											<ul>
-												<li><a href="blog-masonry.html"><div>4 Columns</div></a></li>
-												<li><a href="blog-masonry-3.html"><div>3 Columns</div></a></li>
-												<li><a href="blog-masonry-2.html"><div>2 Columns</div></a></li>
-												<li><a href="blog-masonry-full.html"><div>100% Width</div></a></li>
-											</ul>
-										</li>
-										<li class="mega-menu-title"><a href="#"><div>Grid</div></a>
-											<ul>
-												<li><a href="blog-grid.html"><div>4 Columns</div></a></li>
-												<li><a href="blog-grid-3.html"><div>3 Columns</div></a></li>
-												<li><a href="blog-grid-2.html"><div>2 Columns</div></a></li>
-											</ul>
-										</li>
-									</ul>
-									<ul class="mega-menu-column col-md-3">
-										<li class="mega-menu-title"><a href="#"><div>Small Thumbs</div></a>
-											<ul>
-												<li><a href="blog-small-left-sidebar.html"><div>Left Sidebar</div></a></li>
-												<li><a href="blog-small.html"><div>Right Sidebar</div></a></li>
-												<li><a href="blog-small-both-sidebar.html"><div>Both Sidebar</div></a></li>
-												<li><a href="blog-small-full-width.html"><div>Full Width</div></a></li>
-												<li><a href="blog-small-alt.html"><div>Alternate Layout</div></a></li>
-											</ul>
-										</li>
-										<li class="mega-menu-title"><a href="#"><div>Item Splitting</div></a>
-											<ul>
-												<li><a href="blog-grid.html"><div>Pagination</div></a></li>
-												<li><a href="blog-masonry.html"><div>Infinite Scroll</div></a></li>
-											</ul>
-										</li>
-									</ul>
-									<ul class="mega-menu-column col-md-3">
-										<li class="mega-menu-title"><a href="#"><div>Single</div></a>
-											<ul>
-												<li><a href="blog-single.html"><div>Default Layout</div></a></li>
-												<li><a href="blog-single-left-sidebar.html"><div>Left Sidebar</div></a></li>
-												<li><a href="blog-single-full.html"><div>Full Width</div></a></li>
-												<li><a href="blog-single-small.html"><div>Small Image</div></a></li>
-												<li><a href="blog-single-split-right-sidebar.html"><div>Split Layout</div></a></li>
-											</ul>
-										</li>
-										<li class="mega-menu-title"><a href="#"><div>Comments Module</div></a>
-											<ul>
-												<li><a href="blog-single-left-sidebar.html#comments"><div>Facebook Comments</div></a></li>
-												<li><a href="blog-single-small.html#comments"><div>Disqus Comments</div></a></li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-							</li>-->
-							<li><a href="*"><div>Promociones</div></a></li>
-							<li><a href="*"><div>Contacto</div></a></li>
-						
-								
+						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1500">
+							<li><a href="#top" data-href="#top"><div>Inicio</div></a></li>
+							<li><a href="#quienes-somos" data-href="#quienes-somos"><div>Quienes Somos</div></a></li>
+							<li><a href="#productos" data-href="#productos"><div>Productos</div></a></li>
+							<li><a href="#marcas" data-href="#marcas"><div>Marcas</div></a></li>
+							<!--<li><a href="#promociones" data-href="#promociones"><div>Promociones</div></a></li>-->
+							<li><a href="#contacto" data-href="#contacto"><div>Contacto</div></a></li>
+							
 						</ul>
-
-								
 
 					</nav><!-- #primary-menu end -->
 
@@ -217,7 +78,7 @@
 		</header><!-- #header end -->
         <!--------------- Slider ---------------------->
         <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix" data-speed="1500" data-loop="true" data-autoplay="10000">
-			<div class="slider-parallax-inner">
+			<div class="slider-parallax-inner" id="top">
 
 				<div class="swiper-container swiper-parent">
 					<div class="swiper-wrapper">
@@ -258,9 +119,9 @@
 		============================================= -->
 		<section id="content">
 
-			<div class="content-wrap">
+			<div class="content-wrap" >
 
-				<div class="container clearfix">
+				<div class="container clearfix" id="quienes-somos">
 					<div class="row clearfix">
 
 						<div class="col-lg-5">
@@ -322,7 +183,7 @@
 
 				<div class="container clearfix">
 
-					<div class="row topmargin-lg bottommargin-sm">
+					<div class="row topmargin-lg bottommargin-sm" id="productos">
 
 						<div class="heading-block center">
 							<h2>Un amplio catálogo de productos</h2>
@@ -469,7 +330,7 @@
 				</div>
     
 				<div class="section notopmargin notopborder">
-					<div class="container clearfix">
+					<div class="container clearfix" id="marcas">
 						<div class="heading-block center nomargin">
 							<h3>Marcas</h3>
 						</div>
@@ -514,7 +375,7 @@
 
 				<!-- Footer Widgets
 				============================================= -->
-				<div class="footer-widgets-wrap clearfix">
+				<div class="footer-widgets-wrap clearfix" id="contacto">
 
 					<div class="col-lg-6">
 
